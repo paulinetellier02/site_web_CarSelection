@@ -1,0 +1,43 @@
+.introduction{
+    padding: 30px;
+    background-color: #ffff; 
+    text-align: left; 
+    position: relative;
+}
+.menu{
+    background-color: #b6c4f1; 
+    padding: 20px;
+    text-align: center; 
+    position: relative;
+    width: 80%; 
+    margin: 0 auto; 
+}
+.logo-left {
+    left: 10px; }
+  
+.logo-right {
+        right: 10px; 
+        }
+.presentation{
+    color: #000000; 
+    font-size: 18px;
+}
+.banner-text {
+    color: #000000; 
+    font-size: 24px; 
+    font-weight: bold; }
+.logo-left,
+.logo-right {
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        width: 50px; 
+        height: auto; }
+.banner {
+            background-color: #97a7dc; 
+            padding: 20px;
+            text-align: center; 
+            position: relative; }
+h1{
+    color:red;
+}

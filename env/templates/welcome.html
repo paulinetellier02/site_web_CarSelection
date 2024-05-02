@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarSelection: Site de vente de voiture</title>
+    <link rel="stylesheet" href="affichage.css">
+    <link rel="icon" href='https://i.pinimg.com/236x/4a/76/1b/4a761b04e8e6f74f7cab5b52516f3a35.jpg' type="image/jpg">
+
+</head>
+<style>
+.banner {
+    background-color: #ffff; 
+    padding: 20px;
+    text-align: center; 
+    position: relative; }
+.banner-text {
+    color: #000000; 
+    font-size: 24px; 
+    width: 95%;
+    font-weight: bold; }
+.banner-text2 {
+    color: #000000; 
+    font-size: 20px; 
+    font-weight: bold; }
+.banner2{
+    background-color: #09216dc9; 
+    height: 7px; 
+    margin: 0; 
+    padding: 0;
+    text-align: center; 
+    position: relative;
+}
+.banner3{
+    background-color: #ffff; 
+    height: 35px; 
+    margin: 0; 
+    padding: 0;
+    text-align: center; 
+    position: relative;
+    background-image: url('https://i.pinimg.com/564x/4c/8b/f5/4c8bf5d0f2883fbb9a231e8d81df5b5b.jpg');
+    background-size: contain; 
+    background-position: center; 
+}  
+.banner4{
+    background-color: #fff;
+    height:17px
+}
+.introduction {
+    /*background-color: #a3cefc93;*/
+    padding: 20px;
+    width: 85%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+.sponsor{
+    background-color: #ffff; 
+    height: 52px; 
+    margin: 0; 
+    padding: 0;
+    text-align: center; 
+    position: relative;
+}
+.taille{
+    color: #000000; 
+    font-size: 40px; /*#b6c4f1,  width: 80%;, background-color: #9d9d9eee; */ 
+    padding: 20px;
+    width: 80%;
+    border-style: thin ;
+    border-width: 2px;
+    border-spacing: 2cm;
+    text-align: center; 
+    position: relative;
+    margin: auto; 
+}
+.logo-left {
+    left: 10px;
+    position: absolute; 
+    top: 40%; 
+    transform: translateY(-50%); 
+    width: 350px; 
+    height: auto;  }
+  
+.logo-right {
+    right: 10px; 
+    position: absolute; 
+    top: 40%; 
+    transform: translateY(-50%); 
+    width: 350px; 
+    height: auto; }
+.logo2 {
+    left: 10px; 
+    position: absolute; 
+    top: 40%; 
+    transform: translateY(-50%); 
+    width: 50px; 
+    height: auto; }
+.presentation{
+    color: #000000; 
+    position: right; 
+    font-size: 18px;
+}
+.logosponso {
+        right: 10px; 
+        width: 100px; 
+        }
+.taille2{
+    text-align: center; 
+    color: #000000; 
+    font-size: 18px;
+}
+.taille3{
+    text-align: center; 
+    color: #ffff; 
+    font-size:27px;
+    
+}
+
+.tailleform {
+    padding: 10px;
+    font-size: 13px;
+    width: 100%; 
+    display: flex; /* Utiliser un conteneur flex */
+    flex-direction: row; /* Aligner les éléments horizontalement */
+    justify-content: space-between; /* Espacer les éléments également */
+    align-items: center; /* Centrer les éléments verticalement */
+    margin-bottom: 30px;
+}
+
+.tailleform input {
+    flex: 1; /* Faire en sorte que les champs d'entrée occupent tout l'espace disponible */
+}
+.logo-list {
+    list-style-type: none; 
+    padding: 0; 
+    text-align: left; 
+        }
+.logo-list img {
+    width: 15px; 
+    margin-bottom: 10px; /* Ajoute un espace entre chaque logo */
+        }
+.logo-container {
+    text-align: center; /* Centre les images horizontalement */
+        }
+.logo-container img {
+    width: 40px; /* Ajustez la taille des images selon vos besoins */
+    margin-right: 10px; /* Ajoute un espacement entre les images */
+    display: inline-block; /* Affiche les images côte à côte */
+        }
+.menu {
+    background-color: #0e31a56c; /*#e5f1fff1*/
+    background-size: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+.menu p {
+    font-size: 16px;
+    color: #333;
+        }
+
+.menu select,
+.menu input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+        }
+
+.menu button {
+    background-color: #02193284;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: center;
+        }
+
+.menu button:hover {
+    background-color: #0056b3;
+        }
+.container {
+    display: flex; /* Utilise un affichage flex pour aligner les éléments côte à côte */
+    justify-content: space-between; /* Répartit l'espace disponible entre les éléments */
+    margin-bottom: 10px; /* Ajoute un espace en bas des conteneurs */
+        }
+
+        /* Styles pour les champs de saisie */
+    select, input[type="text"] {
+        width: 30%; /* Définit la largeur des champs */
+        padding: 5px; /* Ajoute un rembourrage autour des champs */
+        box-sizing: border-box; /* Inclut le rembourrage et la bordure dans la largeur totale */
+        }
+</style>
+<body>
+
+<div class="banner">
+    <img src="https://i.pinimg.com/564x/48/6e/32/486e32d2271b5a3774217d33a1d9c778.jpg"  class="logo-left">
+          
+    <h1 class="banner-text">Bienvenue chez CarSelection </h1>
+    <h1 class="banner-text2"> Les meilleurs du marché pour choisir la voiture qui vous plait ! </h1>
+          
+    <img src="https://i.pinimg.com/564x/48/6e/32/486e32d2271b5a3774217d33a1d9c778.jpg" class="logo-right">
+    
+</div>
+<div class="banner2">  </div>
+<div class="banner3">  </div>
+
+<div class="introduction">
+    <h1 class="taille2"> A propos de nous : </h1>
+    <span class="presentation"> Notre site propose des voitures d'occasion à vendre pour tous les goûts <br><br> </span>
+    <span class="presentation"> Entrez les critères que vous recherchez, et nous vous proposerons la meilleure voiture au prix le moins élevé ! <br><br></span> 
+</div>
+<div class="banner3">  </div>
+<div class="banner2">  </div>
+<div class="banner4">  </div>
+<div class="banner4">  </div>
+
+<div class="menu">
+    <h1 class="taille3">Caracteristiques pour votre voiture: </h1>
+<p class="taille"> 
+    <select id="essence" name="choix essence">
+        <option value="" disabled selected>Type de carburant</option>
+        <option value="choix1">Essence</option>
+        <option value="choix2">Diesel</option>
+        <option value="choix3">GPL ou GNL</option>
+        <option value="choix4">Electrique</option>
+        <option value="choix5">Hybride</option>
+      </select>
+
+    <select id="marque" name="choix marque">
+        <option value="" disabled selected>Marque</option>
+        <option value="choix1">Renault</option>
+        <option value="choix2">Audi</option>
+        <option value="choix3">Abarth</option>
+        <option value="choix4">Mercedes-Benz</option>
+        <option value="choix5">Volvo</option>
+        <option value="choix5">Volswagen</option>
+    </select>
+    <select id="vitesse" name="choix vitesse" >
+        <option value="" disabled selected>Boite de vitesse</option>
+        <option value="choix1">Indifférent</option>
+        <option value="choix2">Manuelle</option>
+        <option value="choix3">Automatique</option>
+        <option value="choix4">Semi-auto</option>
+    </select>
+    <select id="colors" name="colors" placeholder="Couleur">
+        <option value="" disabled selected>Couleurs</option>
+        <option value="red" >Rouge</option>
+        <option value="blue">Bleu</option>
+        <option value="green">Vert</option>
+    </select>
+
+    <input type="text" id="prix" name="prix" placeholder="Prix">
+    <input type="text" id="puissance" name="puissance" placeholder="Puissance en CV">
+    <input type="text" id="km" name="Kilomètrage" placeholder="Kilomètrage">
+    <input type="text" id="modele" name="Modèle" placeholder="Modèle">
+    <input type="text" id="carburant" name="carburant" placeholder="Consommation de carburant">
+    <input type="text" id="CO2" name="CO2" placeholder="Emission de CO2">
+
+    <form class="tailleform" >
+        <input type="number" id="portes" name="portes" min="2" max="5" placeholder="Nombre de portes">
+        
+        <input type="number" id="places" name="places" min="2" max="8" placeholder="Nombre de places">
+        
+        <input type="number" id="annee" name="annee" min="2000" max="2021" placeholder="Année d'achat de la voiture" required>
+    </form>
+
+    <br>
+      <button onclick="afficherChoixMarque()">Rechercher</button>
+    </p>
+</div>
+
+<script>
+    function afficherChoix() {
+      var selectElement = document.getElementById("choix");
+      var selectedValue = selectElement.value;
+      alert("Choix sélectionné : " + selectedValue);
+    }
+    </script>
+<div class="sponsor">
+    <ul class="logo-container">
+    <img src="https://i.pinimg.com/236x/36/82/5e/36825eafea6580cf679f8c758246c43f.jpg" alt="Logo 1">
+    <img src="https://i.pinimg.com/236x/0e/de/fd/0edefd62efd2340eb1f60acaf7c29464.jpg" alt="Logo 2">
+    <img src ="https://i.pinimg.com/236x/d3/5c/ae/d35cae21ea8bc59a371ff3e2355408fa.jpg" alt="Logo 12">
+    <img src="https://i.pinimg.com/236x/59/1a/d3/591ad3f139557ecb6d4bea8b4f99cee4.jpg" alt="Logo 3">
+    <img src="https://i.pinimg.com/236x/3a/de/47/3ade47cf06a91d0c81f494cad55318c0.jpg" alt="Logo 4">
+    <img src="https://i.pinimg.com/236x/46/5a/55/465a55aa7f8578b4a9e3fbb060fc0418.jpg" alt="Logo 5">
+    <img src="https://i.pinimg.com/236x/13/37/61/133761227bfdbea898480ce09dc10c99.jpg" alt="Logo 6">
+    <img src="https://i.pinimg.com/236x/49/36/b6/4936b605b01f3bc8ff77bad4889cc5cd.jpg" alt="Logo 7">
+    <img src ="https://i.pinimg.com/236x/81/26/11/812611c18c61bcebf60bf51e4a434210.jpg" alt="Logo 8">
+    <img src ="https://i.pinimg.com/236x/d2/a6/ec/d2a6ec1f3b33bbe2cec42d32c511a003.jpg" alt="Logo 9">
+    <img src ="https://i.pinimg.com/236x/2b/04/fd/2b04fd2b361abae98dfe64662450d882.jpg" alt="Logo 10">
+    <img src ="https://i.pinimg.com/236x/dd/24/04/dd2404c5247a4e81105d5c645c2adb4a.jpg" alt="Logo 14">
+    <img src ="https://i.pinimg.com/236x/db/65/ce/db65ceecc098e7f80f5c219541031670.jpg" alt="Logo 11">
+    <img src ="https://i.pinimg.com/564x/b5/2f/a8/b52fa8103913124e16f9f8af082602b5.jpg" alt="Logo 13">
+    <img src ="https://i.pinimg.com/236x/d9/e5/d3/d9e5d31c545f5ee163bd8b43acc1fd8b.jpg" alt="Logo 15">
+
+</ul>
+</div>
+</body>
+</html>
